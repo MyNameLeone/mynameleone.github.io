@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon | Web Developer - Websites That Bring Clients</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket"><</span>
+                <span class="logo-name">Leon</span>
+                <span class="logo-divider"> / </span>
+                <span class="logo-mono">WEB-DEV</span>
+                <span class="logo-bracket">></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#guarantees" class="nav-link">Guarantees</a></li>
+                    <li><a href="#process" class="nav-link">How I Work</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switch">
+                    <a href="../" class="lang-link">RU</a>
+                    <span class="lang-sep">/</span>
+                    <a href="../en/" class="lang-link active">EN</a>
+                    <span class="lang-sep">/</span>
+                    <a href="../sr/" class="lang-link">SR</a>
+                </div>
+                <a href="#contact" class="btn btn--small btn--primary header-cta">✉️ Contact</a>
+            </div>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-badge pulse-badge">
+                <span class="badge-dot"></span>
+                Available for new projects
+            </div>
+            <h1 class="hero-title" id="heroTitle">
+                <span class="hero-typing" id="heroTyping"></span><span class="hero-cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">
+                Landing pages, business card sites, small projects.<br />
+                With analytics, ad setup, and hosting deployment.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn--large btn--primary btn--arrow">
+                    <i class="fas fa-arrow-down"></i> Start your project
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-code-block">
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-func">createSite</span> = <span class="code-punct">(</span><span class="code-param">brief</span><span class="code-punct">)</span> <span class="code-keyword">=></span> <span class="code-punct">{</span></div>
+                        <div class="code-line code-indent-1"><span class="code-keyword">const</span> result <span class="code-op">=</span> <span class="code-punct">{</span></div>
+                        <div class="code-line code-indent-2"><span class="code-key">quality</span>: <span class="code-string">'premium'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">speed</span>: <span class="code-string">'1-3 days'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">price</span>: <span class="code-string">'fair'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">support</span>: <span class="code-string">'30 days free'</span>,</div>
+                        <div class="code-line code-indent-1"><span class="code-punct">};</span></div>
+                        <div class="code-line"><span class="code-keyword">return</span> <span class="code-function">render</span><span class="code-punct">(result);</span></div>
+                        <div class="code-line"><span class="code-punct">};</span></div>
+                        <div class="code-line code-comment"><span class="code-slash">//</span> ✅ Site is ready. Clients are happy.</div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title-left">
+                        A website is not just pages on the internet,<br />
+                        it's a tool that <span class="gradient-text">brings clients</span>.
+                    </h2>
+                    <p>My job is to make it work: generate leads, attract customers, and drive sales.</p>
+                    <p><strong>Here's how I do it:</strong></p>
+                    <div class="about-values">
+                        <div class="value-item"><span class="value-icon"><i class="fas fa-bolt"></i></span><span><strong>No long approvals.</strong> Get your website in just 1-4 days.</span></div>
+                        <div class="value-item"><span class="value-icon"><i class="fas fa-lock"></i></span><span><strong>No hidden fees.</strong> Fixed price, no surprises.</span></div>
+                        <div class="value-item"><span class="value-icon"><i class="fas fa-star"></i></span><span><strong>No compromise on quality.</strong></span></div>
+                        <div class="value-item"><span class="value-icon"><i class="fas fa-headset"></i></span><span><strong>Ongoing support after launch.</strong></span></div>
+                    </div>
+                    <div class="about-story"><p><strong>Why cheaper than agencies?</strong><br />No office, no managers, no overhead. Just results. Top agency quality at a fraction of the cost.</p></div>
+                    <p class="about-signature">- <span class="gradient-text">Leon</span>, web developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-label reveal">- What I Do</div>
+            <h2 class="section-title reveal">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-1">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="service-title">🌐 Websites</h3>
+                    <ul class="service-list">
+                        <li>Landing pages (sales pages)</li>
+                        <li>Business websites</li>
+                        <li>Corporate sites (up to 7 pages)</li>
+                        <li>Responsive across phones, tablets, and desktops</li>
+                        <li>Fast loading</li>
+                        <li>Eye-catching animations</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal reveal-2">
+                    <div class="service-icon"><i class="fab fa-telegram-plane"></i></div>
+                    <h3 class="service-title">🤖 Telegram Bots</h3>
+                    <ul class="service-list">
+                        <li>Lead collection & consultations</li>
+                        <li>Chat bots with menu & FAQs</li>
+                        <li>New order notifications</li>
+                        <li>Message broadcasts</li>
+                        <li>Customer communication automation</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal reveal-3">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="service-title">📊 Analytics</h3>
+                    <ul class="service-list">
+                        <li><strong>Google Analytics 4 (GA4)</strong></li>
+                        <li><strong>Google Tag Manager (GTM)</strong></li>
+                        <li>Goal tracking: calls, forms, clicks</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal reveal-4">
+                    <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3 class="service-title">☁️ Hosting & Launch</h3>
+                    <ul class="service-list">
+                        <li>Hosting selection & setup</li>
+                        <li>Domain & SSL certificate</li>
+                        <li>Launch on your production domain</li>
+                        <li>Basic SEO: titles, meta tags, sitemap</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal reveal-5">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3 class="service-title">🛟 Support</h3>
+                    <ul class="service-list">
+                        <li><strong>30 days free support</strong></li>
+                        <li>Bug fixes</li>
+                        <li>Help with questions</li>
+                        <li>Minor adjustments</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal reveal-6">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="service-title">🗄 Basic Backend</h3>
+                    <ul class="service-list">
+                        <li>Lead collection from site</li>
+                        <li>Data storage</li>
+                        <li>No complex backend infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section guarantees" id="guarantees">
+        <div class="container">
+            <div class="section-label reveal">- Your Safety</div>
+            <h2 class="section-title reveal">What I guarantee</h2>
+            <div class="guarantees-grid">
+                <div class="guarantee-card reveal reveal-1">
+                    <div class="guarantee-badge">01</div>
+                    <div class="guarantee-icon"><i class="fas fa-euro-sign"></i></div>
+                    <h4>Fair Price</h4>
+                    <p>Fixed cost agreed before work begins. No hidden fees for extra pages or edits.</p>
+                    <div class="guarantee-tag">💰 The price we agree on is the price you pay.</div>
+                </div>
+                <div class="guarantee-card reveal reveal-2">
+                    <div class="guarantee-badge">02</div>
+                    <div class="guarantee-icon"><i class="fas fa-clock"></i></div>
+                    <h4>Meeting Deadlines</h4>
+                    <p>I set a deadline and stick to it. If I'm late - <strong>10% off for each day overdue</strong>.</p>
+                    <div class="guarantee-tag">⏱️ Hasn't happened yet 😉</div>
+                </div>
+                <div class="guarantee-card reveal reveal-3">
+                    <div class="guarantee-badge">03</div>
+                    <div class="guarantee-icon"><i class="fas fa-key"></i></div>
+                    <h4>Full Access</h4>
+                    <p>After payment you get access to absolutely everything related to your website.</p>
+                    <div class="guarantee-tag">🔑 The site is fully yours. Forever.</div>
+                </div>
+                <div class="guarantee-card reveal reveal-4">
+                    <div class="guarantee-badge">04</div>
+                    <div class="guarantee-icon"><i class="fas fa-life-ring"></i></div>
+                    <h4>30 Days Support</h4>
+                    <p>After launch I'm here: fixing bugs, answering questions, helping with setup. <strong>Free.</strong></p>
+                    <div class="guarantee-tag">📞 I'm here for a whole month</div>
+                </div>
+                <div class="guarantee-card guarantee-card--special reveal reveal-5">
+                    <div class="guarantee-badge">05</div>
+                    <div class="guarantee-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h4>Deposit Refund</h4>
+                    <p>If at the demo stage you absolutely don't like the result - I <strong>refund your deposit in full</strong>.</p>
+                    <div class="guarantee-tag">🔄 No arguments. No excuses. No pressure.</div>
+                </div>
+            </div>
+            <div class="guarantee-cta reveal">
+                <div class="guarantee-quote">
+                    <i class="fas fa-quote-left"></i>
+                    Why am I so confident? Because I take pride in delivering quality work. And if I take a project - I see it through to perfection.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-label reveal">- How We Work</div>
+            <h2 class="section-title reveal">Simple. Transparent. To the point.</h2>
+            <div class="process-timeline">
+                <div class="process-step reveal">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Initial Consultation</h4>
+                        <p>You contact me. We discuss the project: what you need, how many pages, what features. I prepare a quote with a fixed price and timeline.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Deposit <span class="step-highlight">30-50%</span></h4>
+                        <p>You pay a deposit to confirm we're starting. I buy the domain and hosting (if needed) and begin development.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Development & Demo</h4>
+                        <p>I create the site on a temporary domain. You check the design, forms, buttons, mobile version. <strong>Revisions are free. Unlimited.</strong></p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Final Payment <span class="step-highlight">50-70%</span></h4>
+                        <p>You pay the rest <strong>ONLY AFTER</strong> you've confirmed the site is ready and you're satisfied. And you get full access to everything.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Support <span class="step-highlight">30 Days of Free Support</span></h4>
+                        <p>I'm here. Helping if something goes wrong, answering questions, fixing issues.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="process-rule reveal">
+                <i class="fas fa-gem"></i>
+                <p><strong>"Payment - only after you've verified the quality."</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section audience" id="audience">
+        <div class="container">
+            <div class="section-label reveal">- For You</div>
+            <h2 class="section-title reveal">Who this is for</h2>
+            <div class="audience-grid">
+                <div class="audience-card reveal reveal-1"><div class="audience-emoji">🧑‍💼</div><h4>Freelancers & Independent Professionals</h4><p>Need a business card site or landing page to receive leads. Fast, affordable, no bureaucracy.</p></div>
+                <div class="audience-card reveal reveal-2"><div class="audience-emoji">🛒</div><h4>Small Businesses</h4><p>Want an online showcase but not ready to pay an agency $5000+. I'll make a simple catalog with ordering.</p></div>
+                <div class="audience-card reveal reveal-3"><div class="audience-emoji">🧑‍🏫</div><h4>Bloggers & Experts</h4><p>A sales landing page for your course, webinar, or consultation. With payments, lead forms, and analytics.</p></div>
+                <div class="audience-card reveal reveal-4"><div class="audience-emoji">🚀</div><h4>Startups & New Ventures</h4><p>Need to test a hypothesis fast? I'll make a landing page in 1-2 days to start collecting early clients.</p></div>
+                <div class="audience-card reveal reveal-5"><div class="audience-emoji">📢</div><h4>If Your Website Isn't Working</h4><p>Old site not working? I'll redo it with a modern approach. Set up analytics to find out why there are no leads.</p></div>
+                <div class="audience-card reveal reveal-6"><div class="audience-emoji">🧘</div><h4>Those tired of complexity</h4><p>You tell me what you need - I take care of the rest.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-label reveal">- FAQ</div>
+            <h2 class="section-title reveal">Frequently Asked Questions</h2>
+            <div class="faq-list reveal">
+                <div class="faq-item"><button class="faq-question"><span>Can you really do what I need?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Let's discuss it. If I know how to do it - I'll take it on and deliver it properly. If not - I'll be honest and won't waste your time.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>What tech stack do you use?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p><strong>Vibecoding</strong> - I combine manual development with AI tools to build sites 3-5x faster. But for you, what matters is the result, not the method 😉</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>How much does it cost?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>It depends on complexity. Starting prices:</p><ul class="faq-prices"><li><span class="faq-price-label">Landing page (1 page)</span><span class="faq-price-value">from 299€</span></li><li><span class="faq-price-label">Business website (up to 7 pages)</span><span class="faq-price-value">from 999€</span></li><li><span class="faq-price-label">With analytics + GTM + hosting</span><span class="faq-price-value">120€</span></li><li><span class="faq-price-label">Website revisions</span><span class="faq-price-value">from 15€</span></li></ul><p>I'll give the exact price after discussing your task.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>Can I see examples?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Yes, I share examples in private conversation. Write to me and I'll show you what I can do.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>What if I change my mind after the deposit?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>If I've already started and we can't find a solution - I <strong>refund your deposit</strong>. No hard feelings, no arguments. That's my guarantee.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>How will I edit the site myself?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>I'll create an easy admin panel that even a beginner can use. Adding text, changing photos, or editing contacts is intuitive. If you have questions - I'll help for free in the first 30 days.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>Do I buy the domain and hosting or do you?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Either way works. If you want - I'll buy, set up, and show you how to pay going forward. If you want to do it yourself - I'll help you choose and connect everything.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>Do you provide a contract?</span><i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Yes. Either an official contract (for self-employed or businesses) or a written agreement in messenger - whichever is more convenient for you.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-label reveal">- Contact</div>
+            <h2 class="section-title reveal">
+                Let's discuss<br />
+                <span class="gradient-text">your project</span>
+            </h2>
+            <div class="contact-wrapper reveal">
+                <p class="contact-text">Write to me right now - and in 15 minutes we'll discuss what you need, how much it will cost, and when I can start.</p>
+                <div class="contact-highlight"><i class="fas fa-lightbulb"></i><p><strong>Free consultation.</strong> Even if you just want to estimate a budget or figure out what to order - I'll help you sort it out. No obligations.</p></div>
+                <div class="contact-links">
+                    <a href="https://t.me/ONELEONE" target="_blank" class="contact-link-btn telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>
+                            <span class="contact-link-label">Telegram</span>
+                            <span class="contact-link-value">@ONELEONE</span>
+                        </span>
+                    </a>
+                    <a href="mailto:MyNameIsLeone7@gmail.com" class="contact-link-btn email">
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">MyNameIsLeone7@gmail.com</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-label reveal">- Testimonials</div>
+            <h2 class="section-title reveal">What Clients Say</h2>
+
+            <div class="carousel-3d-wrap">
+                <div class="carousel-3d" id="carousel3d">
+                    <div class="testimonial-card carousel-card" data-id="review-1">
+                        <img src="../Screens/Screenshot_1.png" alt="Review 1" class="testimonial-screenshot" />
+                    </div>
+
+                    <div class="testimonial-card carousel-card" data-id="review-2">
+                        <img src="../Screens/Screenshot_2.png" alt="Review 2" class="testimonial-screenshot" />
+                    </div>
+
+                    <div class="testimonial-card carousel-card" data-id="review-3">
+                        <img src="../Screens/Screenshot_3.png" alt="Review 3" class="testimonial-screenshot" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><span class="logo-bracket"><</span><span class="logo-name">Leon</span><span class="logo-divider"> / </span><span class="logo-mono">WEB-DEV</span><span class="logo-bracket">></span></a>
+                    <p class="footer-desc">I create websites that bring clients. Fast, reliable, no hidden fees.</p>
+                </div>
+                <div class="footer-links"><a href="#services">Services</a><a href="#guarantees">Guarantees</a><a href="#process">How I Work</a><a href="#testimonials">Testimonials</a><a href="#faq">FAQ</a></div>
+                <div class="footer-social"><a href="https://t.me/ONELEONE" target="_blank" class="social-link"><i class="fab fa-telegram-plane"></i></a><a href="mailto:MyNameIsLeone7@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Leon / Web Development</p><p class="footer-soul">Built with care</p></div>
+        </div>
+    </footer>
+
+    <div class="cookie-bar" id="cookieBar">
+        <p class="cookie-text">This site uses cookies to improve your experience. By continuing to use the site, you agree to this.</p>
+        <button class="cookie-btn" id="cookieAccept">Accept</button>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

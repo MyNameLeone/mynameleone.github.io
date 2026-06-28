@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лев | Веб-разработчик — Сайты, которые приносят клиентов</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ════════════════ PARTICLES ════════════════ -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ════════════════ HEADER ════════════════ -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket"><</span>
+                <span class="logo-name">Лев</span>
+                <span class="logo-divider"> / </span>
+                <span class="logo-mono">WEB-DEV</span>
+                <span class="logo-bracket">></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link" data-lang="navServices">Услуги</a></li>
+                    <li><a href="#guarantees" class="nav-link" data-lang="navGuarantees">Гарантии</a></li>
+                    <li><a href="#process" class="nav-link" data-lang="navProcess">Как работаю</a></li>
+                    <li><a href="#testimonials" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-link" data-lang="navContact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switch">
+                        <a href="index.html" class="lang-link active">RU</a>
+                        <span class="lang-sep">/</span>
+                        <a href="en/" class="lang-link">EN</a>
+                        <span class="lang-sep">/</span>
+                        <a href="sr/" class="lang-link">SR</a>
+                    </div>
+                <a href="#contact" class="btn btn--small btn--primary header-cta">
+                    ✉️ Связаться
+                </a>
+            </div>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ════════════════ HERO ════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-badge pulse-badge">
+                <span class="badge-dot"></span>
+                <span data-lang="heroBadge">Готов к новым проектам</span>
+            </div>
+            <h1 class="hero-title" id="heroTitle">
+                <span class="hero-typing" id="heroTyping"></span><span class="hero-cursor">|</span>
+            </h1>
+            <p class="hero-subtitle" data-lang="heroSubtitle">
+                Лендинги, визитки, небольшие проекты.<br />
+                С аналитикой, настройкой рекламы и запуском на хостинге.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn--large btn--primary btn--arrow">
+                    <i class="fas fa-arrow-down"></i> <span data-lang="heroBtn">Обсудить проект</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Листай</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ════════════════ ABOUT ════════════════ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-code-block">
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-func">createSite</span> = <span class="code-punct">(</span><span class="code-param">brief</span><span class="code-punct">)</span> <span class="code-keyword">=></span> <span class="code-punct">{</span></div>
+                        <div class="code-line code-indent-1"><span class="code-keyword">const</span> result <span class="code-op">=</span> <span class="code-punct">{</span></div>
+                        <div class="code-line code-indent-2"><span class="code-key">quality</span>: <span class="code-string">'premium'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">speed</span>: <span class="code-string">'1–3 days'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">price</span>: <span class="code-string">'fair'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">support</span>: <span class="code-string">'30 days free'</span>,</div>
+                        <div class="code-line code-indent-1"><span class="code-punct">};</span></div>
+                        <div class="code-line"><span class="code-keyword">return</span> <span class="code-function">render</span><span class="code-punct">(result);</span></div>
+                        <div class="code-line"><span class="code-punct">};</span></div>
+                        <div class="code-line code-comment"><span class="code-slash">//</span> ✅ Сайт готов. Клиенты довольны.</div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title-left" data-lang="aboutTitle">
+                        Сайт — это не просто страницы в интернете,<br />
+                        а инструмент, который <span class="gradient-text">приносит клиентов</span>.
+                    </h2>
+                    <p data-lang="aboutText1">
+                        Моя задача — сделать так, чтобы он работал: собирал заявки, привлекал внимание и продавал.
+                    </p>
+                    <p><strong data-lang="aboutHow">Как я это делаю:</strong></p>
+
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-bolt"></i></span>
+                            <span data-lang="aboutVal1"><strong>Без долгих согласований.</strong> Сайт готов через 1–4 дня, а не через месяц.</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-lock"></i></span>
+                            <span data-lang="aboutVal2"><strong>Без скрытых платежей.</strong> Цена фиксированная, без сюрпризов.</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-star"></i></span>
+                            <span data-lang="aboutVal3"><strong>Без потери качества.</strong> Быстро — не значит халтурно.</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-headset"></i></span>
+                            <span data-lang="aboutVal4"><strong>Без исчезновений.</strong> После запуска я на связи и помогаю.</span>
+                        </div>
+                    </div>
+
+                    <div class="about-story">
+                        <p data-lang="aboutStory">
+                            <strong>Почему дешевле студий?</strong><br />
+                            У меня нет офиса, менеджеров и лишних расходов. Только результат.
+                            Качество — как в топовых студиях, цена — в разы ниже.
+                        </p>
+                    </div>
+                    <p class="about-signature" data-lang="aboutSignature">— <span class="gradient-text">Лев</span>, веб-разработчик</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ SERVICES ════════════════ -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-label reveal" data-lang="servicesLabel">— Что я делаю</div>
+            <h2 class="section-title reveal" data-lang="servicesTitle">Мои услуги</h2>
+
+            <div class="services-grid">
+                <!-- 🌐 Сайты -->
+                <div class="service-card reveal reveal-1">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="service-title" data-lang="servTitle1">🌐 Сайты</h3>
+                    <ul class="service-list">
+                        <li>Лендинги (продающие страницы)</li>
+                        <li>Сайты-визитки</li>
+                        <li>Корпоративные сайты (до 7 страниц)</li>
+                        <li>Адаптив под телефоны, планшеты, компьютеры</li>
+                        <li>Быстрая загрузка</li>
+                        <li>Эффектные анимации (без сложного дизайна)</li>
+                    </ul>
+                </div>
+
+                <!-- 🤖 Telegram-боты -->
+                <div class="service-card reveal reveal-2">
+                    <div class="service-icon"><i class="fab fa-telegram-plane"></i></div>
+                    <h3 class="service-title" data-lang="servTitle2">🤖 Telegram-боты</h3>
+                    <ul class="service-list">
+                        <li>Сбор заявок и консультаций</li>
+                        <li>Чат-боты с меню и ответами на частые вопросы</li>
+                        <li>Уведомления о новых заказах</li>
+                        <li>Рассылки</li>
+                        <li>Автоматизация общения с клиентами</li>
+                    </ul>
+                </div>
+
+                <!-- 📊 Аналитика -->
+                <div class="service-card reveal reveal-3">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="service-title" data-lang="servTitle3">📊 Аналитика</h3>
+                    <ul class="service-list">
+                        <li><strong>Google Analytics 4 (GA4)</strong></li>
+                        <li><strong>Google Tag Manager (GTM)</strong></li>
+                        <li>Отслеживание целей: звонки, формы, клики</li>
+                    </ul>
+                </div>
+
+                <!-- ☁️ Запуск и хостинг -->
+                <div class="service-card reveal reveal-4">
+                    <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3 class="service-title" data-lang="servTitle4">☁️ Запуск и хостинг</h3>
+                    <ul class="service-list">
+                        <li>Выбор и настройка хостинга</li>
+                        <li>Домен и SSL-сертификат</li>
+                        <li>Перенос сайта на постоянный домен</li>
+                        <li>Базовая SEO: заголовки, мета-теги, карта сайта</li>
+                    </ul>
+                </div>
+
+                <!-- 🛟 Поддержка -->
+                <div class="service-card reveal reveal-5">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3 class="service-title" data-lang="servTitle5">🛟 Поддержка</h3>
+                    <ul class="service-list">
+                        <li><strong>30 дней бесплатной помощи</strong></li>
+                        <li>Исправление багов</li>
+                        <li>Помощь с вопросами</li>
+                        <li>Мелкие доработки</li>
+                    </ul>
+                </div>
+
+                <!-- 🗄 Бекенд -->
+                <div class="service-card reveal reveal-6">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="service-title" data-lang="servTitle6">🗄 Базовый бекенд</h3>
+                    <ul class="service-list">
+                        <li>Сбор заявок с сайта</li>
+                        <li>Хранение данных</li>
+                        <li>Без сложного сервера</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ GUARANTEES ════════════════ -->
+    <section class="section guarantees" id="guarantees">
+        <div class="container">
+            <div class="section-label reveal" data-lang="guaranteesLabel">— Твоя безопасность</div>
+            <h2 class="section-title reveal" data-lang="guaranteesTitle">
+                Гарантии, которые защищают
+            </h2>
+
+            <div class="guarantees-grid">
+                <div class="guarantee-card reveal reveal-1">
+                    <div class="guarantee-badge">01</div>
+                    <div class="guarantee-icon"><i class="fas fa-euro-sign"></i></div>
+                    <h4>Честная цена</h4>
+                    <p>Фиксированная стоимость прописана до начала работ. Никаких скрытых доплат за «дополнительную страницу» или «правки».</p>
+                    <div class="guarantee-tag">💰 Что сказал — за столько и делаю</div>
+                </div>
+
+                <div class="guarantee-card reveal reveal-2">
+                    <div class="guarantee-badge">02</div>
+                    <div class="guarantee-icon"><i class="fas fa-clock"></i></div>
+                    <h4>Соблюдение сроков</h4>
+                    <p>Я называю дату сдачи и придерживаюсь её. Если опаздываю — <strong>скидка 10% за каждый день просрочки</strong>.</p>
+                    <div class="guarantee-tag">⏱️ Пока ни разу не пригодилось 😉</div>
+                </div>
+
+                <div class="guarantee-card reveal reveal-3">
+                    <div class="guarantee-badge">03</div>
+                    <div class="guarantee-icon"><i class="fas fa-key"></i></div>
+                    <h4>Полный доступ к сайту</h4>
+                    <p>После оплаты вы получаете доступ абсолютно ко всему, что относится к вашему сайту.</p>
+                    <div class="guarantee-tag">🔑 Сайт — полностью ваш. Навсегда.</div>
+                </div>
+
+                <div class="guarantee-card reveal reveal-4">
+                    <div class="guarantee-badge">04</div>
+                    <div class="guarantee-icon"><i class="fas fa-life-ring"></i></div>
+                    <h4>30 дней поддержки</h4>
+                    <p>После запуска я на связи: исправляю баги, отвечаю на вопросы, помогаю с настройкой. <strong>Бесплатно.</strong></p>
+                    <div class="guarantee-tag">📞 Я рядом целый месяц</div>
+                </div>
+
+                <div class="guarantee-card guarantee-card--special reveal reveal-5">
+                    <div class="guarantee-badge">05</div>
+                    <div class="guarantee-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h4>Возврат предоплаты</h4>
+                    <p>Если на этапе демонстрации вам категорически не нравится результат — я <strong>возвращаю предоплату полностью</strong>.</p>
+                    <div class="guarantee-tag">🔄 Без споров. Без «но». Без уговоров.</div>
+                </div>
+            </div>
+
+            <div class="guarantee-cta reveal">
+                <div class="guarantee-quote">
+                    <i class="fas fa-quote-left"></i>
+                    Почему я так уверен? Потому что я делаю качественно. И если беру проект — довожу до идеала.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ PROCESS ════════════════ -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-label reveal" data-lang="processLabel">— Как мы работаем</div>
+            <h2 class="section-title reveal" data-lang="processTitle">
+                Просто. Прозрачно. По делу.
+            </h2>
+
+            <div class="process-timeline">
+                <div class="process-step reveal">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Знакомство</h4>
+                        <p>Вы пишете мне. Мы обсуждаем проект: что нужно, сколько страниц, какие функции. Я готовлю коммерческое предложение с фиксированной ценой и сроками.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Предоплата <span class="step-highlight">30–50%</span></h4>
+                        <p>Вы вносите предоплату — это подтверждает, что мы начинаем работать. Я покупаю домен и хостинг (если нужно) и запускаю разработку.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Разработка и демонстрация</h4>
+                        <p>Я создаю сайт на временном домене. Вы проверяете дизайн, формы, кнопки, мобильную версию. <strong>Правки — бесплатно. Сколько угодно.</strong></p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Финальная оплата <span class="step-highlight">50–70%</span></h4>
+                        <p>Вы платите остаток <strong>ТОЛЬКО ПОСЛЕ ТОГО</strong>, как убедились, что сайт готов и вас всё устраивает. И получаете полный доступ ко всему.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Поддержка <span class="step-highlight">30 дней бесплатно</span></h4>
+                        <p>Я рядом. Помогаю, если что-то пошло не так, отвечаю на вопросы, исправляю недочёты.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-rule reveal">
+                <i class="fas fa-gem"></i>
+                <p><strong>«Деньги — только после того, как вы убедились в качестве».</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ TARGET AUDIENCE ════════════════ -->
+    <section class="section audience" id="audience">
+        <div class="container">
+            <div class="section-label reveal" data-lang="audienceLabel">— Это для вас</div>
+            <h2 class="section-title reveal" data-lang="audienceTitle">Кому подойдёт мой формат работы</h2>
+
+            <div class="audience-grid">
+                <div class="audience-card reveal reveal-1">
+                    <div class="audience-emoji">🧑‍💼</div>
+                    <h4>Фрилансерам и самозанятым</h4>
+                    <p>Нужен сайт-визитка или лендинг, чтобы принимать заявки. Быстро, недорого, без лишней бюрократии.</p>
+                </div>
+                <div class="audience-card reveal reveal-2">
+                    <div class="audience-emoji">🛒</div>
+                    <h4>Небольшим магазинам</h4>
+                    <p>Хотите онлайн-витрину, но не готовы платить студии 200 000 ₽. Сделаю простой каталог с возможностью заказа.</p>
+                </div>
+                <div class="audience-card reveal reveal-3">
+                    <div class="audience-emoji">🧑‍🏫</div>
+                    <h4>Инфобизнесменам и блогерам</h4>
+                    <p>Продающий лендинг на курс, вебинар или консультацию. С оплатой, формами захвата и аналитикой.</p>
+                </div>
+                <div class="audience-card reveal reveal-4">
+                    <div class="audience-emoji">🚀</div>
+                    <h4>Стартапам и тестовым проектам</h4>
+                    <p>Нужно быстро проверить гипотезу? Сделаю лендинг за 1–2 дня, чтобы вы начали собирать первых клиентов.</p>
+                </div>
+                <div class="audience-card reveal reveal-5">
+                    <div class="audience-emoji">📢</div>
+                    <h4>Тем, у кого сайт не работает</h4>
+                    <p>Переделаю старый сайт на современный лад. Настрою аналитику, чтобы вы поняли, почему нет заявок.</p>
+                </div>
+                <div class="audience-card reveal reveal-6">
+                    <div class="audience-emoji">🧘</div>
+                    <h4>Для тех, кто устал от сложностей</h4>
+                    <p>Хотите просто работающий сайт? Без головной боли, без технических терминов, без лишних вопросов? У нас всё просто: вы говорите — я делаю. Всё.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ FAQ ════════════════ -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-label reveal" data-lang="faqLabel">— FAQ</div>
+            <h2 class="section-title reveal" data-lang="faqTitle">Ответы на частые вопросы</h2>
+
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>А вы точно сможете сделать то, что мне нужно?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Давайте обсудим. Если я понимаю, как это сделать — берусь и делаю качественно. Если нет — скажу честно, чтобы не тратить ваше время.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Какой стек технологий вы используете?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Вайбкодинг</strong> — это когда я сочетаю ручную разработку с ИИ-инструментами, чтобы делать сайты в 3–5 раз быстрее обычного. Но для вас главное — не как я делаю, а какой результат вы получаете 😉</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Сколько это стоит?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Всё зависит от сложности. Примерные цены:</p>
+                        <ul class="faq-prices">
+                            <li><span class="faq-price-label">Лендинг на 1 страницу</span> <span class="faq-price-value">от 299 €</span></li>
+                            <li><span class="faq-price-label">Сайт-визитка (до 7 стр.)</span> <span class="faq-price-value">от 999 €</span></li>
+                            <li><span class="faq-price-label">С аналитикой + GTM + хостинг</span> <span class="faq-price-value">120 €</span></li>
+                            <li><span class="faq-price-label">Доработки сайта</span> <span class="faq-price-value">от 15 €</span></li>
+                        </ul>
+                        <p>Точную цену скажу после обсуждения задачи.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>А можно посмотреть примеры?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, я высылаю примеры в личном общении. Напишите мне — и я покажу, что умею.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Что будет, если я передумаю после предоплаты?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Если я уже начал работу и мы не можем найти общее решение — я <strong>возвращаю предоплату</strong>. Без обид, без споров. Это моя гарантия.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Как я буду редактировать сайт сам?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Я сделаю удобную админку, в которой разберётся даже новичок. Добавлять тексты, менять фото или редактировать контакты — легко и интуитивно. Если останутся вопросы — я бесплатно помогу в первые 30 дней.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>А домен и хостинг я сам покупаю или вы?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Могу и так, и так. Если хотите — я куплю, настрою и покажу, как оплачивать дальше. Если хотите сами — помогу выбрать и всё подключу.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Вы делаете договор?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да. По желанию — официальный договор (самозанятым или ИП) или просто письменное соглашение в мессенджере. Как вам удобнее.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ CONTACT ════════════════ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-label reveal" data-lang="contactLabel">— Контакты</div>
+            <h2 class="section-title reveal" data-lang="contactTitle">
+                Давайте обсудим<br />
+                <span class="gradient-text">ваш проект</span>
+            </h2>
+
+            <div class="contact-wrapper reveal">
+                <p class="contact-text">
+                    Напишите мне прямо сейчас — и мы за 15 минут обсудим, что вам нужно,
+                    сколько это будет стоить и когда я смогу начать.
+                </p>
+                <div class="contact-highlight">
+                    <i class="fas fa-lightbulb"></i>
+                    <p><strong>Бесплатная консультация.</strong> Даже если вы просто хотите прикинуть бюджет или понять, что вообще заказывать — я помогу разобраться. Без обязательств.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://t.me/ONELEONE" target="_blank" class="contact-link-btn telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>
+                            <span class="contact-link-label">Telegram</span>
+                            <span class="contact-link-value">@ONELEONE</span>
+                        </span>
+                    </a>
+                    <a href="mailto:MyNameIsLeone7@gmail.com" class="contact-link-btn email">
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">MyNameIsLeone7@gmail.com</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ TESTIMONIALS ════════════════ -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-label reveal">— Отзывы</div>
+            <h2 class="section-title reveal">Что говорят клиенты</h2>
+
+            <div class="carousel-3d-wrap">
+                <div class="carousel-3d" id="carousel3d">
+                    <div class="testimonial-card carousel-card" data-id="review-1">
+                        <img src="Screens/Screenshot_1.png" alt="Отзыв 1" class="testimonial-screenshot" />
+                    </div>
+
+                    <div class="testimonial-card carousel-card" data-id="review-2">
+                        <img src="Screens/Screenshot_2.png" alt="Отзыв 2" class="testimonial-screenshot" />
+                    </div>
+
+                    <div class="testimonial-card carousel-card" data-id="review-3">
+                        <img src="Screens/Screenshot_3.png" alt="Отзыв 3" class="testimonial-screenshot" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ FOOTER ════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-bracket"><</span>
+                        <span class="logo-name">Лев</span>
+                        <span class="logo-divider"> / </span>
+                        <span class="logo-mono">WEB-DEV</span>
+                        <span class="logo-bracket">></span>
+                    </a>
+                    <p class="footer-desc">Создаю сайты, которые приносят клиентов. Быстро, надёжно, без скрытых платежей.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Услуги</a>
+                    <a href="#guarantees">Гарантии</a>
+                    <a href="#process">Как работаю</a>
+                    <a href="#testimonials">Отзывы</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/ONELEONE" target="_blank" class="social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="mailto:MyNameIsLeone7@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Лев / Веб-разработка</p>
+                <p class="footer-soul">Сделано с душой и вниманием к деталям</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-bar" id="cookieBar">
+        <p class="cookie-text">Этот сайт использует cookie-файлы для улучшения работы. Продолжая использовать сайт, вы соглашаетесь с этим.</p>
+        <button class="cookie-btn" id="cookieAccept">Принять</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

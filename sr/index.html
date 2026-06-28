@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lav | Web Developer — Sajtovi koji donose klijente</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ════════════════ PARTICLES ════════════════ -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ════════════════ HEADER ════════════════ -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket"><</span>
+                <span class="logo-name">Lav</span>
+                <span class="logo-divider"> / </span>
+                <span class="logo-mono">WEB-DEV</span>
+                <span class="logo-bracket">></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Usluge</a></li>
+                    <li><a href="#guarantees" class="nav-link">Garantije</a></li>
+                    <li><a href="#process" class="nav-link">Kako radim</a></li>
+                    <li><a href="#testimonials" class="nav-link">Utisci</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switch">
+                    <a href="../" class="lang-link">RU</a>
+                    <span class="lang-sep">/</span>
+                    <a href="../en/" class="lang-link">EN</a>
+                    <span class="lang-sep">/</span>
+                    <a href="../sr/" class="lang-link active">SR</a>
+                </div>
+                <a href="#contact" class="btn btn--small btn--primary header-cta">
+                    ✉️ Kontaktirajte me
+                </a>
+            </div>
+            <button class="burger" id="burger" aria-label="Meni">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ════════════════ HERO ════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-badge pulse-badge">
+                <span class="badge-dot"></span>
+                Spreman za nove projekte
+            </div>
+            <h1 class="hero-title" id="heroTitle">
+                <span class="hero-typing" id="heroTyping"></span><span class="hero-cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">
+                Landing stranice, vizitke, manji projekti.<br />
+                Sa analitikom, podešavanjem reklama i hostingom.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn--large btn--primary btn--arrow">
+                    <i class="fas fa-arrow-down"></i> Dogovorite projekat
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Listaj</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ════════════════ ABOUT ════════════════ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-code-block">
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-func">createSite</span> = <span class="code-punct">(</span><span class="code-param">brief</span><span class="code-punct">)</span> <span class="code-keyword">=></span> <span class="code-punct">{</span></div>
+                        <div class="code-line code-indent-1"><span class="code-keyword">const</span> result <span class="code-op">=</span> <span class="code-punct">{</span></div>
+                        <div class="code-line code-indent-2"><span class="code-key">quality</span>: <span class="code-string">'premium'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">speed</span>: <span class="code-string">'1-4 days'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">price</span>: <span class="code-string">'fair'</span>,</div>
+                        <div class="code-line code-indent-2"><span class="code-key">support</span>: <span class="code-string">'30 days free'</span>,</div>
+                        <div class="code-line code-indent-1"><span class="code-punct">};</span></div>
+                        <div class="code-line"><span class="code-keyword">return</span> <span class="code-function">render</span><span class="code-punct">(result);</span></div>
+                        <div class="code-line"><span class="code-punct">};</span></div>
+                        <div class="code-line code-comment"><span class="code-slash">//</span> ✅ Sajt je gotov. Klijenti su zadovoljni.</div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title-left">
+                        Sajt nije samo stranice na internetu,<br />
+                        vec alat koji <span class="gradient-text">donosi klijente</span>.
+                    </h2>
+                    <p>Moj posao je da napravim da radi: prikuplja upite, privlaci paznju i prodaje.</p>
+                    <p><strong>Kako to radim:</strong></p>
+
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-bolt"></i></span>
+                            <span><strong>Bez dugih usaglašavanja.</strong> Sajt gotov za 1-4 dana.</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-lock"></i></span>
+                            <span><strong>Bez skrivenih troškova.</strong> Fiksna cena, bez iznenađenja.</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-star"></i></span>
+                            <span><strong>Bez gubitka kvaliteta.</strong> Brzo ne znači loše.</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon"><i class="fas fa-headset"></i></span>
+                            <span><strong>Bez nestajanja.</strong> Nakon lansiranja sam tu i pomažem.</span>
+                        </div>
+                    </div>
+
+                    <div class="about-story">
+                        <p><strong>Zašto jeftinije od studija?</strong><br />
+                        Nemam kancelariju, menadžere ni dodatne troškove. Samo rezultat.
+                        Kvalitet kao u top studijima, cena višestruko niža.</p>
+                    </div>
+                    <p class="about-signature">— <span class="gradient-text">Lav</span>, web developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ SERVICES ════════════════ -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-label reveal">— Šta radim</div>
+            <h2 class="section-title reveal">Moje usluge</h2>
+
+            <div class="services-grid">
+                <div class="service-card reveal reveal-1">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="service-title">🌐 Sajtovi</h3>
+                    <ul class="service-list">
+                        <li>Landing stranice (prodajne)</li>
+                        <li>Vizitke</li>
+                        <li>Korporativni sajtovi (do 7 stranica)</li>
+                        <li>Prilagodljiv za telefone, tablete, računare</li>
+                        <li>Brzo učitavanje</li>
+                        <li>Efektne animacije</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-2">
+                    <div class="service-icon"><i class="fab fa-telegram-plane"></i></div>
+                    <h3 class="service-title">🤖 Telegram botovi</h3>
+                    <ul class="service-list">
+                        <li>Prikupljanje upita i konsultacije</li>
+                        <li>Chat botovi sa menijem i odgovorima</li>
+                        <li>Obaveštenja o novim porudžbinama</li>
+                        <li>Slanje poruka</li>
+                        <li>Automatizacija komunikacije</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-3">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="service-title">📊 Analitika</h3>
+                    <ul class="service-list">
+                        <li><strong>Google Analytics 4 (GA4)</strong></li>
+                        <li><strong>Google Tag Manager (GTM)</strong></li>
+                        <li>Pracenje ciljeva: pozivi, forme, klikovi</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-4">
+                    <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3 class="service-title">☁️ Lansiranje i hosting</h3>
+                    <ul class="service-list">
+                        <li>Izbor i podešavanje hostinga</li>
+                        <li>Domen i SSL sertifikat</li>
+                        <li>Prenos sajta na stalni domen</li>
+                        <li>Osnovni SEO: naslovi, meta tagovi, mapa sajta</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-5">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3 class="service-title">🛟 Podrška</h3>
+                    <ul class="service-list">
+                        <li><strong>30 dana besplatne pomoći</strong></li>
+                        <li>Ispravljanje grešaka</li>
+                        <li>Pomoć oko pitanja</li>
+                        <li>Manje dorade</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-6">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="service-title">🗄 Osnovni backend</h3>
+                    <ul class="service-list">
+                        <li>Prikupljanje upita sa sajta</li>
+                        <li>Čuvanje podataka</li>
+                        <li>Bez složenog servera</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ GUARANTEES ════════════════ -->
+    <section class="section guarantees" id="guarantees">
+        <div class="container">
+            <div class="section-label reveal">— Tvoja sigurnost</div>
+            <h2 class="section-title reveal">
+                Garantije koje štite
+            </h2>
+
+            <div class="guarantees-grid">
+                <div class="guarantee-card reveal reveal-1">
+                    <div class="guarantee-badge">01</div>
+                    <div class="guarantee-icon"><i class="fas fa-euro-sign"></i></div>
+                    <h4>Poštena cena</h4>
+                    <p>Fiksna cena je dogovorena pre početka rada. Bez skrivenih doplata.</p>
+                    <div class="guarantee-tag">💰 Šta kažem — toliko i platite</div>
+                </div>
+
+                <div class="guarantee-card reveal reveal-2">
+                    <div class="guarantee-badge">02</div>
+                    <div class="guarantee-icon"><i class="fas fa-clock"></i></div>
+                    <h4>Poštovanje rokova</h4>
+                    <p>Kažem datum i držim ga se. Ako kasnim — <strong>popust 10% za svaki dan kašnjenja</strong>.</p>
+                    <div class="guarantee-tag">⏱️ Još se nije desilo 😉</div>
+                </div>
+
+                <div class="guarantee-card reveal reveal-3">
+                    <div class="guarantee-badge">03</div>
+                    <div class="guarantee-icon"><i class="fas fa-key"></i></div>
+                    <h4>Potpuni pristup sajtu</h4>
+                    <p>Nakon uplate dobijate pristup apsolutno svemu što se odnosi na vaš sajt.</p>
+                    <div class="guarantee-tag">🔑 Sajt je u potpunosti vaš. Zauvek.</div>
+                </div>
+
+                <div class="guarantee-card reveal reveal-4">
+                    <div class="guarantee-badge">04</div>
+                    <div class="guarantee-icon"><i class="fas fa-life-ring"></i></div>
+                    <h4>30 dana podrške</h4>
+                    <p>Nakon lansiranja sam tu: ispravljam greške, odgovaram na pitanja, pomažem. <strong>Besplatno.</strong></p>
+                    <div class="guarantee-tag">📞 Tu sam čitav mesec</div>
+                </div>
+
+                <div class="guarantee-card guarantee-card--special reveal reveal-5">
+                    <div class="guarantee-badge">05</div>
+                    <div class="guarantee-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h4>Povraćaj uplate</h4>
+                    <p>Ako vam se na prikazu kategorički ne dopada rezultat — <strong>vraćam uplatu u potpunosti</strong>.</p>
+                    <div class="guarantee-tag">🔄 Bez rasprave. Bez "ali". Bez nagovaranja.</div>
+                </div>
+            </div>
+
+            <div class="guarantee-cta reveal">
+                <div class="guarantee-quote">
+                    <i class="fas fa-quote-left"></i>
+                    Zašto sam tako siguran? Zato što radim kvalitetno. I ako uzmem projekat — dovodim ga do savršenstva.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ PROCESS ════════════════ -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-label reveal">— Kako radimo</div>
+            <h2 class="section-title reveal">
+                Jednostavno. Transparentno. Bez komplikacija.
+            </h2>
+
+            <div class="process-timeline">
+                <div class="process-step reveal">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Upoznavanje</h4>
+                        <p>Pišete mi. Razgovaramo o projektu: šta treba, koliko stranica, koje funkcije. Pripremam ponudu sa fiksnom cenom i rokovima.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Uplata <span class="step-highlight">30–50%</span></h4>
+                        <p>Uplaćujete depozit — to potvrđuje da počinjemo. Kupujem domen i hosting (ako treba) i počinjem razvoj.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Razvoj i prikaz</h4>
+                        <p>Kreiram sajt na privremenom domenu. Pregledate dizajn, forme, dugmad, mobilnu verziju. <strong>Izmene su besplatne. Koliko god.</strong></p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Konačna uplata <span class="step-highlight">50–70%</span></h4>
+                        <p>Plaćate ostatak <strong>TEK ONDA</strong> kada se uverite da je sajt gotov i da vam sve odgovara. I dobijate potpuni pristup svemu.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Podrška <span class="step-highlight">30 dana besplatno</span></h4>
+                        <p>Tu sam. Pomažem ako nešto nije u redu, odgovaram na pitanja, ispravljam nedostatke.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-rule reveal">
+                <i class="fas fa-gem"></i>
+                <p><strong>«Novac — tek nakon što se uverite u kvalitet.»</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ TARGET AUDIENCE ════════════════ -->
+    <section class="section audience" id="audience">
+        <div class="container">
+            <div class="section-label reveal">— Ovo je za vas</div>
+            <h2 class="section-title reveal">Kome odgovara moj format rada</h2>
+
+            <div class="audience-grid">
+                <div class="audience-card reveal reveal-1">
+                    <div class="audience-emoji">🧑‍💼</div>
+                    <h4>Slobodnjacima</h4>
+                    <p>Potreban vam je vizitka ili landing za primanje upita. Brzo, povoljno, bez birokratije.</p>
+                </div>
+                <div class="audience-card reveal reveal-2">
+                    <div class="audience-emoji">🛒</div>
+                    <h4>Malim radnjama</h4>
+                    <p>Želite online izlog, ali niste spremni platiti studiju 200.000 RSD. Napraviću jednostavan katalog sa mogućnošću poručivanja.</p>
+                </div>
+                <div class="audience-card reveal reveal-3">
+                    <div class="audience-emoji">🧑‍🏫</div>
+                    <h4>Infobiznisu i blogerima</h4>
+                    <p>Prodajni landing za kurs, webinar ili konsultacije. Sa plaćanjem, formama za prikupljanje i analitikom.</p>
+                </div>
+                <div class="audience-card reveal reveal-4">
+                    <div class="audience-emoji">🚀</div>
+                    <h4>Startupima</h4>
+                    <p>Treba vam brzo da testirate hipotezu? Napraviću landing za 1-2 dana da počnete sa prikupljanjem prvih klijenata.</p>
+                </div>
+                <div class="audience-card reveal reveal-5">
+                    <div class="audience-emoji">📢</div>
+                    <h4>Onima čiji sajt ne radi</h4>
+                    <p>Preraditi ću stari sajt na moderan način. Podesiti analitiku da biste razumeli zašto nema upita.</p>
+                </div>
+                <div class="audience-card reveal reveal-6">
+                    <div class="audience-emoji">🧘</div>
+                    <h4>Za one koji su umorni od komplikacija</h4>
+                    <p>Želite jednostavno radni sajt? Bez glavobolje, bez tehničkih termina, bez nepotrebnih pitanja? Vi kažete — ja radim. Sve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ FAQ ════════════════ -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-label reveal">— FAQ</div>
+            <h2 class="section-title reveal">Odgovori na česta pitanja</h2>
+
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Da li zaista možete da uradite to što mi treba?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Hajde da razgovaramo. Ako znam kako da uradim — preuzimam i radim kvalitetno. Ako ne — reći ću iskreno, da ne gubimo vreme.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Koji stack tehnologija koristite?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Vibecoding</strong> — kombinujem ručni razvoj sa AI alatima da napravim sajtove 3-5 puta brže. Ali za vas je bitan rezultat, a ne metod 😉</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Koliko košta?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sve zavisi od složenosti. Okvirne cene:</p>
+                        <ul class="faq-prices">
+                            <li><span class="faq-price-label">Landing stranica (1 str.)</span> <span class="faq-price-value">od 299 €</span></li>
+                            <li><span class="faq-price-label">Vizitka (do 7 str.)</span> <span class="faq-price-value">od 999 €</span></li>
+                            <li><span class="faq-price-label">Sa analitikom + GTM + hosting</span> <span class="faq-price-value">120 €</span></li>
+                            <li><span class="faq-price-label">Dorade sajta</span> <span class="faq-price-value">od 15 €</span></li>
+                        </ul>
+                        <p>Tačnu cenu kažem nakon razgovora o zadatku.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Mogu li videti primere?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Da, šaljem primere u privatnom razgovoru. Pišite mi — i pokazaću šta umem.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Šta ako se predomislim nakon uplate?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ako sam već počeo i ne možemo naći zajedničko rešenje — <strong>vraćam uplatu</strong>. Bez uvrede, bez rasprave. To je moja garancija.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Kako ću sam uređivati sajt?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Napraviću jednostavan admin panel koji će razumeti i početnik. Dodavanje tekstova, menjanje slika ili uređivanje kontakata — lako i intuitivno. Ako ostane pitanja — besplatno pomažem prvih 30 dana.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Da li ja kupujem domen i hosting ili vi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Može i tako i tako. Ako želite — ja kupim, podesim i pokažem kako dalje plaćati. Ako želite sami — pomažem da izaberete i sve povežem.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Da li pravimo ugovor?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Da. Po želji — zvanični ugovor ili pismeni dogovor u messengeru — kako vam odgovara.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ CONTACT ════════════════ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-label reveal">— Kontakt</div>
+            <h2 class="section-title reveal">
+                Dogovorimo<br />
+                <span class="gradient-text">vaš projekat</span>
+            </h2>
+
+            <div class="contact-wrapper reveal">
+                <p class="contact-text">
+                    Pišite mi odmah — i za 15 minuta ćemo razgovarati šta vam treba,
+                    koliko će koštati i kada mogu početi.
+                </p>
+                <div class="contact-highlight">
+                    <i class="fas fa-lightbulb"></i>
+                    <p><strong>Besplatna konsultacija.</strong> Čak i ako samo želite da procenite budžet ili shvatite šta da poručite — pomoći ću vam da se snađete. Bez obaveza.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://t.me/ONELEONE" target="_blank" class="contact-link-btn telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>
+                            <span class="contact-link-label">Telegram</span>
+                            <span class="contact-link-value">@ONELEONE</span>
+                        </span>
+                    </a>
+                    <a href="mailto:MyNameIsLeone7@gmail.com" class="contact-link-btn email">
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">MyNameIsLeone7@gmail.com</span>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ TESTIMONIALS ════════════════ -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-label reveal">— Utisci</div>
+            <h2 class="section-title reveal">Šta kažu klijenti</h2>
+
+            <div class="carousel-3d-wrap">
+                <div class="carousel-3d" id="carousel3d">
+                    <div class="testimonial-card carousel-card" data-id="review-1">
+                        <img src="../Screens/Screenshot_1.png" alt="Utisak 1" class="testimonial-screenshot" />
+                    </div>
+
+                    <div class="testimonial-card carousel-card" data-id="review-2">
+                        <img src="../Screens/Screenshot_2.png" alt="Utisak 2" class="testimonial-screenshot" />
+                    </div>
+
+                    <div class="testimonial-card carousel-card" data-id="review-3">
+                        <img src="../Screens/Screenshot_3.png" alt="Utisak 3" class="testimonial-screenshot" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════ FOOTER ════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-bracket"><</span>
+                        <span class="logo-name">Lav</span>
+                        <span class="logo-divider"> / </span>
+                        <span class="logo-mono">WEB-DEV</span>
+                        <span class="logo-bracket">></span>
+                    </a>
+                    <p class="footer-desc">Stvaram sajtove koji donose klijente. Brzo, pouzdano, bez skrivenih troškova.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Usluge</a>
+                    <a href="#guarantees">Garantije</a>
+                    <a href="#process">Kako radim</a>
+                    <a href="#testimonials">Utisci</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/ONELEONE" target="_blank" class="social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="mailto:MyNameIsLeone7@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lav / Web Development</p>
+                <p class="footer-soul">Napravljeno sa dušom i pažnjom</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-bar" id="cookieBar">
+        <p class="cookie-text">Ovaj sajt koristi cookie fajlove radi poboljšanja rada. Nastavkom korišćenja sajta, slažete se sa ovim.</p>
+        <button class="cookie-btn" id="cookieAccept">Prihvatam</button>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
